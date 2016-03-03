@@ -9,7 +9,10 @@ body {
 font-family:"Comfortaa";
 }
 
-
+#menu {
+border-top: 3px solid #000;
+border-bottom: 3px solid #000;
+}
 
 
 ul {
@@ -17,7 +20,7 @@ ul {
     margin: 0;
     padding: 0;
     overflow: auto;
-    background-color: #63B2F3;
+    background-color: #0F8CF4;
     width:792px;
 }
 
