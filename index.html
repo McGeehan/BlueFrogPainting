@@ -9,16 +9,37 @@
 <meta name="author" content="McGeehan Coding">
 <link rel="icon" type="image/png" href="bluefrog.png" />
 <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+<script>
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+</script>
 </head>
 
 <body>
 
 
-<img class="frogpic" src="bluefrog.png" style="width:40%">
-<div class ="header">
-<h1> Blue Frog Painting </h1>
+<div class="header">
+ <a href="index.html"> <img src="bluefrog.png" alt="logo"></a>
+  <h1>Blue Frog Painting</h1>
 </div>
-<center>
+
+<br>
+<br>
+<br>
+<br>
+
+
+<div class ="nav">
 <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="about.html">About</a></li>
@@ -34,18 +55,26 @@
 	<li class="dropdown">
 		<a href="blog.html">Blog</a>
 		<div class="dropdown-content">
-		<a href="refreview.html">References | Reviews</a>
+		<a href="refreview.html">Reviews</a>
 		</div>
 		</li>
 </ul>
-</center>
+</nav>
 
-
-<br>
-<br>
-<div class="container">
-  <section>...</section>
-  <aside>...</aside>
+<div id="slideshow">
+   <div>
+     <img src="//farm6.static.flickr.com/5224/5658667829_2bb7d42a9c_m.jpg">
+   </div>
+   <div>
+     <img src="//farm6.static.flickr.com/5230/5638093881_a791e4f819_m.jpg">
+   </div>
+   <div>
+     Pretty cool eh? This slide is proof the content can be anything.
+   </div>
 </div>
+
+
+
+
 </body>
 </html>
